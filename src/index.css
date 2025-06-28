@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Varela&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.number{
+    @apply text-3xl font-semibold
+}
+.number-description{
+    @apply text-xs text-slate-500 font-light
+}
+.component-title{
+    @apply text-4xl pt-[40px] pb-[20px] font-extrabold text-center mx-auto
+}
+.newArrival-component-card {
+    @apply grid grid-cols-2 mx-auto px-[10px] max-h-[300px] bg-[#f0eeef] cursor-pointer overflow-hidden
+}
+.topSelling-component-card{
+    @apply grid grid-cols-2 mx-auto px-[10px] max-h-[300px] bg-[#f0eeef] cursor-pointer overflow-hidden
+}
+.newArrival-component-card-viewAll {
+    @apply grid grid-cols-2 mx-auto px-[10px] max-h-[300px]  cursor-pointer overflow-auto
+}
+.topSelling-component-card-viewAll{
+     @apply grid grid-cols-2 mx-auto px-[10px] max-h-[300px]  cursor-pointer overflow-auto
+}
+.mobile-button{
+    @apply mx-[10px]  bg-black text-white py-[10px] px-[145px]  rounded-full 
+}
+.mobile-button-white{
+    @apply mx-[10px] py-[10px] px-[145px]  rounded-full text-black bg-white border-black border-[1px]
+}
+li{
+    @apply font-extralight text-sm my-[10px] cursor-pointer
+}
+.footer-group-link-title{
+    @apply font-semibold
+}
