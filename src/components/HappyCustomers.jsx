@@ -71,7 +71,7 @@ const HappyCustomers = () => {
 
 
   return (
-    <section className='w-[90%] mx-auto '>
+    <section className='w-[90%] mx-auto z-[-1] '>
       <div className='flex justify-between items-center mb-6'>
         <h1 className='text-4xl pt-[40px] pb-[20px] font-extrabold text-left mx-[10px]'>OUR HAPPY CUSTOMERS</h1>
         <div className='flex space-x-4'>

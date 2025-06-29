@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {Star, StarHalf, StarIcon} from 'lucide-react'
 import shirt1 from '/shirt1.jpg'
 import fiveStar from '/fiveStars.svg'
 
