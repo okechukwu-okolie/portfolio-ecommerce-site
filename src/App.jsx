@@ -11,69 +11,98 @@ import Cart from './main-pages/Cart'
 import Party from './sub-main-page/Party'
 import Gym from './sub-main-page/Gym'
 import Formal from './sub-main-page/Formal'
+import CombinedStatic from './static/CombinedStatic'
+import Shop from './main-pages/Shop'
+import TopSelling from './sub-main-page/TopSelling'
+import NewArrival from './components/NewArrival'
 function App() {
 
   const routes = createBrowserRouter([
     {
       path:'/',
-      element:<Home/>
-    },
-    {
-      path:'nav',
-      element:<Nav/>
-    },
-    {
-      path:'product-details',
-      element:<ProductDetail/>,
+      element:<CombinedStatic/>,
       children:[
         {
-        index:true,
-        element:<SecondaryNav/>,
-        }
-      ]
-    },
-    {
-      path:'category',
-      element:<Category/>,
-      children:[
-        
-        {
-          path:'casual',
-          element: <Casual />,
+          index:true,
+          element:<Home/>
         },
         {
-          path:'formal',
-          element:<Formal/>,
+          path:'product-details',
+          element:<ProductDetail/>,
+          children:[
+            {
+            index:true,
+            element:<SecondaryNav/>,
+            }
+          ]
         },
         {
-          path:'party',
-          element:<Party/>,
+          path:'category',
+          element:<Category/>,
+          children:[
+            {
+              index:true,
+              element: <Casual />,
+            },
+            {
+              path:'formal',
+              element:<Formal/>,
+            },
+            {
+              path:'casual',
+              element:<Casual/>,
+            },
+            {
+              path:'party',
+              element:<Party/>,
+            },
+            {
+              path:'gym',
+              element:<Gym/>,
+            },
+          ]
         },
         {
-          path:'gym',
-          element:<Gym/>,
+          path:'shop',
+          element:<Shop/>,
+          children:[
+            {
+              index:true,
+              element:<NewArrival/>
+            },
+            {
+                path:'newArrival',
+                element:<NewArrival/>
+            },
+            {
+              path:'topSelling',
+            element:<TopSelling/>
+            },
+          ],
         },
-      ]
+        {
+          path:'product-filter',
+          element:<ProductFilter/>
+        },
+        {
+          path:'cart',
+          element:<Cart/>
+        },
+        {
+          path:'*',
+          element:<h1> This page does not exist</h1>
+        },
+      ],
+      
     },
-    {
-      path:'product-filter',
-      element:<ProductFilter/>
-    },
-    {
-      path:'cart',
-      element:<Cart/>
-    },
-    {
-      path:'*',
-      element:<h1> This page does not exist</h1>
-    },
+   
   ])
 
   return (
    <>
-   <Nav/>
+   {/* <Nav/> */}
    <RouterProvider router = {routes}/>
-   <Footer/> 
+   {/* <Footer/>  */}
    </>
   )
 }

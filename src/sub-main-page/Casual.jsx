@@ -14,7 +14,7 @@ const casualClothings = [
       percentOff:'-20%',
     },
      {
-      id:1,
+      id:2,
       image:shirt1,
       title:'Skinny Fit Jeans',
       rating:'4/5',
@@ -23,7 +23,7 @@ const casualClothings = [
       percentOff:'-20%',
     },
      {
-      id:1,
+      id:3,
       image:shirt1,
       title:'Skinny Fit Jeans',
       rating:'4/5',
@@ -32,7 +32,7 @@ const casualClothings = [
       percentOff:'-20%',
     },
      {
-      id:1,
+      id:4,
       image:shirt1,
       title:'Skinny Fit Jeans',
       rating:'4/5',
@@ -41,7 +41,7 @@ const casualClothings = [
       percentOff:'-20%',
     },
      {
-      id:1,
+      id:5,
       image:shirt1,
       title:'Skinny Fit Jeans',
       rating:'4/5',
@@ -50,7 +50,7 @@ const casualClothings = [
       percentOff:'-20%',
     },
      {
-      id:1,
+      id:6,
       image:shirt1,
       title:'Skinny Fit Jeans',
       rating:'4/5',
